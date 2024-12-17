@@ -1,10 +1,12 @@
 /* 2024-12-09_Programier-Projekt_Main.c
 Programm das Funktionen zu unserem Studium enthält
-Autor: Jan Krummenacher
+Autor: Jan und Jay
 Firma: FHGR
 Version: 1
 Datum: 10.12.2024
 Änderungen:
+13.12.2024: funktion für beenden wurde hinzgefügt von Jay Spiderman
+17.12.2024
 */
 // Einbinden von Headerdateien der Programmbibliothek.
 #include <stdio.h>
@@ -14,8 +16,9 @@ Datum: 10.12.2024
 // Einbinden .h File der Funktionen
 #include "funktion_wein.h"
 #include "funktion_beenden.h"
-
-
+#include "Abbildungsrechner.h"
+#include "Funktion_Flugi.h"
+#include "StudyPlanner.h"
 
 
 // Mit main beginnt das Programm.
@@ -24,24 +27,35 @@ int main(void)
     //Varible definieren
     int var;
     
+    printf("\n");
+    printf("**********************************\n");
+    printf("*     WILLKOMMEN ZUM             *\n");
+    printf("*     FH GR HILFEPROGRAMM        *\n");
+    printf("**********************************\n");
+    printf("\n");
+
     do        
     {   
         // Möglichkeiten ausgeben
         printf("Was moechten Sie tun?\n");
-        printf("1\t Funktion Wein\n");
-        printf("2\t Funktion Wein\n");
-        printf("3\t Funktion Wein\n");
+        printf("1\t Abbildungsrechner fuer geometrische Optik\n");
+        printf("2\t Quiz\n");
+        printf("3\t Studyplaner\n");
+        printf("4\t Hello World\n");
         printf("0\t Programm beenden\n");
         // Abfrage was tun
+        fflush(stdin);
         scanf("%d", &var);
         // Auswahl
         switch(var)
         {
-            case 1 :funktion_wein();
+            case 1 :Abbildungsrechner();
                     break;
-            case 2 :funktion_wein();
+            case 2 :Flugi();
                     break;
-            case 3 :funktion_wein();
+            case 3 :StudyPlanner();
+                    break;       
+            case 4 :funktion_wein();
                     break;
             case 0 :funktion_beenden(); 
                     exit(0);
