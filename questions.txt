@@ -1,0 +1,6 @@
+Python/Numpy wurden speziell für den Unterricht an Schulen entwickelt. F
+Python/Numpy ist die Abkürzung von “Numerical Python”. W
+Python/Numpy ist eine Open-Source-Alternative von MATLAB. W
+Python/Numpy ist ein CAS (Computer-Algebra-System). F
+Die Kernkompetenzen von Python/Numpy sind Numerik, Datenverarbei￾tung und Datenvisualisierung. W
+Python/Numpy ist für die gängigen Betriebssysteme Windows, Mac und Linux erhältlich. W
